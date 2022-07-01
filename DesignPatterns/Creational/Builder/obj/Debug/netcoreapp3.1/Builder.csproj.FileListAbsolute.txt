@@ -1,0 +1,14 @@
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.exe
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.deps.json
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.runtimeconfig.json
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.runtimeconfig.dev.json
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.dll
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\bin\Debug\netcoreapp3.1\Builder.pdb
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.csproj.AssemblyReference.cache
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.GeneratedMSBuildEditorConfig.editorconfig
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.AssemblyInfoInputs.cache
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.AssemblyInfo.cs
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.csproj.CoreCompileInputs.cache
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.dll
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.pdb
+D:\learn\Design-patterns\DesignPatterns\Creational\Builder\obj\Debug\netcoreapp3.1\Builder.genruntimeconfig.cache

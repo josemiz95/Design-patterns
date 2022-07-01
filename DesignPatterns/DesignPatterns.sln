@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{FB0776D2-C99D-4CF5-8927-26F79D7F56D4}"
+	ProjectSection(SolutionItems) = preProject
+		Creational\README.md = Creational\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{4C768A47-1884-4267-9B15-A6F2876F93B5}"
+	ProjectSection(SolutionItems) = preProject
+		Structural\README.md = Structural\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{E159FC9D-877E-400C-845B-9C1D79F593A3}"
+	ProjectSection(SolutionItems) = preProject
+		Behavioral\README.md = Behavioral\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Creational\Builder\Builder.csproj", "{19BECB70-FE61-4AB7-A802-E33F39DED840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19BECB70-FE61-4AB7-A802-E33F39DED840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BECB70-FE61-4AB7-A802-E33F39DED840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BECB70-FE61-4AB7-A802-E33F39DED840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BECB70-FE61-4AB7-A802-E33F39DED840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19BECB70-FE61-4AB7-A802-E33F39DED840} = {FB0776D2-C99D-4CF5-8927-26F79D7F56D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E139CB0-59B9-4995-8082-BE99337538CC}
+	EndGlobalSection
+EndGlobal
