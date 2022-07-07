@@ -3,6 +3,8 @@
     using System;
     using Builder.Car;
     using Builder.Html;
+    using Builder.Human;
+    using Builder.MetaHuman;
 
     class Program
     {
@@ -12,7 +14,11 @@
 
             //Demo.RunPersonBuilder();
 
-            Demo.RunCarBuilder();
+            //Demo.RunCarBuilder();
+
+            //Demo.RunHumanBuilder();
+
+            Demo.RunMetaHumanBuilder();
         }
 
         
@@ -51,6 +57,29 @@
                                 .Build();
 
             Console.WriteLine(car.ToString());
+        }
+
+        public static void RunHumanBuilder()
+        {
+            // Functional
+            var human = new HumanBuilder()
+                .Called("Josemi")
+                .WorksAs("Dev")
+                .Build();
+
+            Console.WriteLine(human.ToString());
+        }
+
+        public static void RunMetaHumanBuilder()
+        {
+            // Faceted builder
+            MetaHuman.MetaHuman metaHuman = new MetaHumanBuilder()
+                .Human.Called("Josemi")
+                      .Live("Somewhere")
+                .Power.HasPower("Fire")
+                      .HasEnergy(123);
+
+            Console.WriteLine(metaHuman.ToString());
         }
     }
 }

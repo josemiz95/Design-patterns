@@ -13,8 +13,6 @@
         public static Builder New => new Builder();
 
         public override string ToString()
-        {
-            return $"{nameof(Name)}: {Name}, {nameof(Position)}: {Position}";
-        }
+            => $"{nameof(Name)}: {Name}, {nameof(Position)}: {Position}";
     }
 }
