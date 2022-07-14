@@ -33,15 +33,15 @@ namespace Factories.Drink_Machine
 
         public HotDrinkFactory()
         {
-            foreach (var t in typeof(HotDrinkFactory).Assembly.GetTypes())
+            foreach (var type in typeof(HotDrinkFactory).Assembly.GetTypes())
             {
-                if (typeof(IHotDrinkFactory).IsAssignableFrom(t) && !t.IsInterface)
+                if (typeof(IHotDrinkFactory).IsAssignableFrom(type) && !type.IsInterface)
                 {
-                    var hotDrink = t.Name.Replace("Factory", string.Empty);
+                    var hotDrink = type.Name.Replace("Factory", string.Empty);
 
                     namedFactories.Add(
                       hotDrink, 
-                      (IHotDrinkFactory)Activator.CreateInstance(t)
+                      (IHotDrinkFactory)Activator.CreateInstance(type)
                     );
 
                     HotDrinks.Add(hotDrink);
