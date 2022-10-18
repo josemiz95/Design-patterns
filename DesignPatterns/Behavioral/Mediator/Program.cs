@@ -1,13 +1,20 @@
 ﻿using System;
+using Autofac;
 using Mediator.Chat;
+using MediatorPattern.PingMediatR;
+using MediatR;
 
-namespace Mediator
+namespace MediatorPattern
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Demo.ChatRoom();
+            var container = DependencyInjection.Configure();
+            var mediator = container.Resolve<IMediator>();
+
+            //Demo.ChatRoom();
+            Demo.Ping(mediator);
         }
     }
 
@@ -31,6 +38,39 @@ namespace Mediator
             simon.Say("hi everyone!");
 
             jane.PrivateMessage("Simon", "glad you could join us!");
+        }
+
+        public static async void Ping(IMediator mediator)
+        {
+            var resonse = await mediator.Send(new PingRequest
+            {
+                From = "me"
+            });
+
+            Console.WriteLine($"Pring from: {resonse.From} is {resonse.Correct} at {resonse.TimeStamp}");
+        }
+    }
+
+    public static class DependencyInjection
+    {
+        public static IContainer Configure()
+        {
+            var builder = new ContainerBuilder();
+            builder.RegisterType<MediatR.Mediator>()
+                .As<IMediator>()
+                .InstancePerLifetimeScope();
+
+            builder.Register<ServiceFactory>(ctx =>
+            {
+                var c = ctx.Resolve<IComponentContext>();
+                return t => c.Resolve(t);
+            });
+
+            builder.RegisterAssemblyTypes(typeof(Program).Assembly)
+                .AsImplementedInterfaces();
+
+            return builder.Build();
+
         }
     }
 }
