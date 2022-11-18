@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using Strategy.Comparer;
+
 namespace Strategy
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Demo.Strategy();
+            //Demo.Strategy();
+            Demo.Comparer();
         }
     }
 
@@ -20,6 +24,14 @@ namespace Strategy
             var html = new TextProcessor<HtmlListStrategy>();
             html.AppendList(new[] { "foo", "bar", "baz" });
             Console.WriteLine(html);
+        }
+
+        public static void Comparer()
+        {
+            var people = new List<Person>();
+            var comparer = new NameRelationalComparer();
+
+            people.Sort(comparer);
         }
     }
 }
